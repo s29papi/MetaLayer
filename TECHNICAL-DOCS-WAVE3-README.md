@@ -2,9 +2,20 @@
 
 ### **Project Overview**
 
+**Project:** Verifiable Metadata Middleware for 0G Storage.
+
+**Repository:** [github.com/s29papi/MetaLayer](https://github.com/s29papi/MetaLayer)
+
 * **Contract Address:** `0x3Ca8B5e3fCD85c9960C3F8c09f0cbe6145ccdC27`
 * **Creator Tip:** `0.0001 ETH`
 * **Chain:** EVM-compatible 0G testnet
+
+| **Smart Contract**  | [`Metalayer.sol`](https://github.com/s29papi/MetaLayer/blob/main/contracts/src/Metalayer.sol) — On-chain registry storing metadata bytes keyed by file Merkle roots. |
+
+
+| **SDK Integration** | [`src/`](https://github.com/s29papi/MetaLayer/tree/main/src) — TypeScript SDK 
+
+
 
 **MetaLayer** is a middleware layer built on top of **0G Storage** to provide **verifiable, on-chain metadata** for decentralized datasets. During Wave 3, we focused on bridging **off-chain datasets** and **on-chain metadata**, creating a trustless, monetized, and discoverable mapping between dataset root hashes and structured metadata.
 
