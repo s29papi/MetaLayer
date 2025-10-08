@@ -25,13 +25,13 @@ It enables:
 ## ⚙️ Installation
 
 ```bash
-npm install @searchboxlabs/metalayer@1.0.0
+npm install @searchboxlabs/metalayer@1.0.2
 ````
 
 or with Yarn:
 
 ```bash
-yarn add @searchboxlabs/metalayer@1.0.0
+yarn add @searchboxlabs/metalayer@1.0.2
 ```
 
 ---
