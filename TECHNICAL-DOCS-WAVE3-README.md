@@ -1,8 +1,20 @@
 # 🧠 MetaLayer — Wave 3
 
+**Project:** Verifiable Metadata Middleware for 0G Storage.
+
 ### **Project Overview**
 
-**Project:** Verifiable Metadata Middleware for 0G Storage.
+## ⚙️ Installation
+
+```bash
+npm install @searchboxlabs/metalayer@1.0.0
+````
+
+or with Yarn:
+
+```bash
+yarn add @searchboxlabs/metalayer@1.0.0
+```
 
 **Repository:** [github.com/s29papi/MetaLayer](https://github.com/s29papi/MetaLayer)
 
