@@ -1,6 +1,6 @@
-import MetaLayerClient from "@/metalayer";
-import { NETWORKS } from "@/network";
-import { OGFileCtx } from "@/consts";
+import MetaLayerClient from "../src/metalayer";
+import { NETWORKS } from "../src/network";
+import { OGFileCtx } from "../src/consts";
 import { Blob } from '@0glabs/0g-ts-sdk';
 
 import { createWalletClient, http } from 'viem';
@@ -11,6 +11,8 @@ import fs from 'fs/promises';
 import { ethers } from 'ethers';
 import { Indexer } from "@0glabs/0g-ts-sdk";
 import type { SigningKey} from 'ethers';
+import {detectFileCtxFromName, validateOGFileCtx} from "../src/utils"
+
 
 const client = new MetaLayerClient()
 
@@ -18,25 +20,28 @@ const client = new MetaLayerClient()
 async function main() {
     const indexer = new Indexer(NETWORKS.testnet.indexerUrl)
 
-    const ctx: OGFileCtx = {
-        fileType: "text", // need an indication for image | video | audio
-        extension: ".txt",
-        dateAdded: BigInt(Date.now()),
-        encrypted: false,
-        creator: "0x330cA32b71b81Ea2b1D3a5C391C5cFB6520E0A10"
-    }
-
+    const ctx = detectFileCtxFromName("../test.txt", "0x330cA32b71b81Ea2b1D3a5C391C5cFB6520E0A10");
     const buffer = await fs.readFile('./test.txt');
     const file: any = {
-        size: buffer.length,
-        slice: (start: number, end: number) => ({
-            arrayBuffer: async () => buffer.slice(start, end).buffer
-        })
-    };
+      size: buffer.length,
+      slice: (start: number, end: number) => ({
+        arrayBuffer: async () => {
+          // ensure start/end within bounds
+          const s = Math.max(0, start | 0);
+          const e = Math.min(buffer.length, end | 0);
+
+          // Option A: use the underlying ArrayBuffer slice based on byteOffset/length
+          const view = buffer.slice(s, e);
+          const ab = view.buffer.slice(view.byteOffset, view.byteOffset + view.length);
+          return ab;
+        }
+      })
+};
 
     const provider = new ethers.JsonRpcProvider(NETWORKS.testnet.rpcUrl);
 
     const privateKey: any = process.env.PRIVATE_KEY;
+  
     const signer = new ethers.Wallet(privateKey, provider); 
 
     await client.uploadWithCtx(indexer, ctx, file, NETWORKS.testnet, signer)
@@ -51,9 +56,10 @@ async function main() {
     console.log(client.decodeOGFileCtx(encodedCtx))
 
     
-
-
-
+    console.log(rootHash)
 }
 
 main()
+
+
+

@@ -14,7 +14,6 @@ export class MetaLayerClient {
   // 3️⃣ Encode (kept same logic)
   static encodeOGFileCtx(ctx: OGFileCtx): `0x${string}` {
     return encodeAbiParameters(OG_FILE_CTX_TYPES, [
-      // ctx.rootHash,
       ctx.fileType,
       ctx.extension,
       ctx.dateAdded,
@@ -122,7 +121,7 @@ export class MetaLayerClient {
 
   // 4️⃣ Decode (kept same logic)
   decodeOGFileCtx(encoded: `0x${string}`) {
-    const [fileType, extension, dateAdded, encrypted, creator] = decodeAbiParameters(
+    const [ fileType, extension, dateAdded, encrypted, creator] = decodeAbiParameters(
       OG_FILE_CTX_TYPES,
       encoded
     )
