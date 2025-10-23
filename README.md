@@ -4,7 +4,7 @@
  Verifiable Onchain Metadata for 0G Storage  
 Store, verify, and fetch file contexts directly from the blockchain.
 
-![npm version](https://img.shields.io/npm/v/@metalayer/metalayer)
+![npm version](https://img.shields.io/npm/v/@searchboxlabs/metalayer)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![0G Network](https://img.shields.io/badge/powered%20by-0G-blue)
 
@@ -25,13 +25,13 @@ It enables:
 ## ⚙️ Installation
 
 ```bash
-npm install @searchboxlabs/metalayer@1.0.0
+npm install @searchboxlabs/metalayer@1.0.2
 ````
 
 or with Yarn:
 
 ```bash
-yarn add @searchboxlabs/metalayer@1.0.0
+yarn add @searchboxlabs/metalayer@1.0.2
 ```
 
 ---
