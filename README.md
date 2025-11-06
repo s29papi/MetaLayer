@@ -9,6 +9,10 @@ Store, verify, and fetch file contexts directly from the blockchain.
 ![0G Network](https://img.shields.io/badge/powered%20by-0G-blue)
 
 ## Proof of Mainnet Storage and Metadata context mapping on mainnet:
+
+[context tx hash: ](https://chainscan.0g.ai/tx/0xcb9413367068d7cd1e5697fad426e18dbd3bbcc7891ca5429b1d0712ab7a3a7f)
+[Chainscan Hash](https://chainscan.0g.ai/tx/0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856) 
+
 ```
 First selected node status : {
   connectedPeers: 38,
@@ -69,7 +73,7 @@ Upload successful! Transaction: {
   txHash: '0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856',
   rootHash: '0xda5255f73287096e526638ea0ebc036c5a52d5fbd73c56a20e795e78e7a22735'
 }
-ctx created: 0xcb9413367068d7cd1e5697fad426e18dbd3bbcc7891ca5429b1d0712ab7a3a7f
+ctx created: [context tx hash: ](https://chainscan.0g.ai/tx/0xcb9413367068d7cd1e5697fad426e18dbd3bbcc7891ca5429b1d0712ab7a3a7f)
 96
 ArrayBuffer {
   [Uint8Contents]: <54 68 69 73 20 69 73 20 61 20 74 65 73 74 20 64 61 74 61 73 65 74 20 66 6f 72 20 52 41 47 62 69 74 73 20 45 78 63 68 61 6e 67 65 2e 20 49 74 20 63 6f 6e 74 61 69 6e 73 20 73 61 6d 70 6c 65 20 64 61 74 61 2e 20 6f 70 6f 70 20 6f 69 6f 70 20 66 66 66 66 66 61 20 61 73 61 73 73 20 61 73 61>,
