@@ -1,6 +1,86 @@
 
 # 🧱 MetaLayer SDK
 
+## Proof of Mainnet Storage and Metadata context mapping on mainnet:
+
+```
+First selected node status : {
+  connectedPeers: 38,
+  logSyncHeight: 11763674,
+  logSyncBlock: '0x2d3f07c2a54fab21f7fd1ecd89e2c46ba2e558092ff149cc8703cb5d673e2c92',
+  nextTxSeq: 7333,
+  networkIdentity: {
+    chainId: 16661,
+    flowAddress: '0x62d4144db0f0a6fbbaeb6296c785c71b3d57c526',
+    p2pProtocolVersion: { major: 0, minor: 4, build: 0 }
+  }
+}
+Selected nodes: [
+  StorageNode {
+    url: 'http://218.94.159.101:30275',
+    timeout: 30000,
+    retry: 3
+  }
+]
+Data prepared to upload root=0xda5255f73287096e526638ea0ebc036c5a52d5fbd73c56a20e795e78e7a22735 size=96 numSegments=1 numChunks=1
+Attempting to find existing file info by root hash...
+Found existing file info: {
+  tx: {
+    streamIds: [],
+    data: [],
+    dataMerkleRoot: '0xda5255f73287096e526638ea0ebc036c5a52d5fbd73c56a20e795e78e7a22735',
+    merkleNodes: [ [Array] ],
+    startEntryIndex: 64141312,
+    size: 96,
+    seq: 7331
+  },
+  finalized: true,
+  isCached: false,
+  uploadedSegNum: 1,
+  pruned: false
+}
+Submitting transaction with storage fee: 30733644962n
+Sending transaction with gas price 4000000007
+Transaction hash: 0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856
+Transaction sequence number: 7333
+Wait for log entry on storage node
+File already exists on node http://218.94.159.101:30275 {
+  tx: {
+    streamIds: [],
+    data: [],
+    dataMerkleRoot: '0xda5255f73287096e526638ea0ebc036c5a52d5fbd73c56a20e795e78e7a22735',
+    merkleNodes: [ [Array] ],
+    startEntryIndex: 64141312,
+    size: 96,
+    seq: 7331
+  },
+  finalized: true,
+  isCached: false,
+  uploadedSegNum: 1,
+  pruned: false
+}
+Upload successful! Transaction: {
+  txHash: '0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856',
+  rootHash: '0xda5255f73287096e526638ea0ebc036c5a52d5fbd73c56a20e795e78e7a22735'
+}
+ctx created: 0xcb9413367068d7cd1e5697fad426e18dbd3bbcc7891ca5429b1d0712ab7a3a7f
+96
+ArrayBuffer {
+  [Uint8Contents]: <54 68 69 73 20 69 73 20 61 20 74 65 73 74 20 64 61 74 61 73 65 74 20 66 6f 72 20 52 41 47 62 69 74 73 20 45 78 63 68 61 6e 67 65 2e 20 49 74 20 63 6f 6e 74 61 69 6e 73 20 73 61 6d 70 6c 65 20 64 61 74 61 2e 20 6f 70 6f 70 20 6f 69 6f 70 20 66 66 66 66 66 61 20 61 73 61 73 73 20 61 73 61>,
+  byteLength: 96
+}
+ctx: {
+  version: 1,
+  fileType: 'text/plain',
+  extension: '.txt',
+  category: 'document',
+  dateAdded: 1762428270671n,
+  encrypted: false,
+  creator: '0x330cA32b71b81Ea2b1D3a5C391C5cFB6520E0A10'
+}
+
+```
+
  Verifiable Onchain Metadata for 0G Storage  
 Store, verify, and fetch file contexts directly from the blockchain.
 
