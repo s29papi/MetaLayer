@@ -3,6 +3,12 @@
 
 ## Proof of Mainnet Storage and Metadata context mapping on mainnet:
 
+Verifiable Onchain Metadata for 0G Storage  
+Store, verify, and fetch file contexts directly from the blockchain.
+
+![npm version](https://img.shields.io/npm/v/@searchboxlabs/metalayer)
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![0G Network](https://img.shields.io/badge/powered%20by-0G-blue)
 ```
 First selected node status : {
   connectedPeers: 38,
@@ -41,7 +47,7 @@ Found existing file info: {
 }
 Submitting transaction with storage fee: 30733644962n
 Sending transaction with gas price 4000000007
-Transaction hash: 0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856
+Transaction hash: 🔗 [Chainscan Hash](https://chainscan.0g.ai/tx/0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856) 
 Transaction sequence number: 7333
 Wait for log entry on storage node
 File already exists on node http://218.94.159.101:30275 {
@@ -80,13 +86,6 @@ ctx: {
 }
 
 ```
-
- Verifiable Onchain Metadata for 0G Storage  
-Store, verify, and fetch file contexts directly from the blockchain.
-
-![npm version](https://img.shields.io/npm/v/@searchboxlabs/metalayer)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![0G Network](https://img.shields.io/badge/powered%20by-0G-blue)
 
 ---
 
