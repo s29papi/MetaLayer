@@ -1,14 +1,14 @@
 
 # 🧱 MetaLayer SDK
 
-## Proof of Mainnet Storage and Metadata context mapping on mainnet:
-
 Verifiable Onchain Metadata for 0G Storage  
 Store, verify, and fetch file contexts directly from the blockchain.
 
 ![npm version](https://img.shields.io/npm/v/@searchboxlabs/metalayer)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![0G Network](https://img.shields.io/badge/powered%20by-0G-blue)
+
+## Proof of Mainnet Storage and Metadata context mapping on mainnet:
 ```
 First selected node status : {
   connectedPeers: 38,
