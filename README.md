@@ -10,8 +10,9 @@ Store, verify, and fetch file contexts directly from the blockchain.
 
 ## Proof of Mainnet Storage and Metadata context mapping on mainnet:
 
-[context tx hash: ](https://chainscan.0g.ai/tx/0xcb9413367068d7cd1e5697fad426e18dbd3bbcc7891ca5429b1d0712ab7a3a7f)
-[Chainscan Hash](https://chainscan.0g.ai/tx/0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856) 
+1. Metadata Context tx hash: (https://chainscan.0g.ai/tx/0xcb9413367068d7cd1e5697fad426e18dbd3bbcc7891ca5429b1d0712ab7a3a7f)
+
+2. Storage Chainscan Hash: (https://chainscan.0g.ai/tx/0x77344b9597b2dc37785b430334af5ed3221a41a4e8051fc0cbc2469447265856) 
 
 ```
 First selected node status : {
